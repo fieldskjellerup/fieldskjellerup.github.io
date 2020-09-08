@@ -1,0 +1,61 @@
+
+body {
+    padding-left: 20px;
+    border: 2px outset grey;
+    margin-left: 15px;
+    margin-right: 920px;
+    
+}
+
+header {
+    color: purple;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    margin-right: 400px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    color: purple;
+    cursor: alias;
+}
+
+#quote {
+    cursor: help;
+}
+
+.quote-name {
+    font-size: 15px;
+}
+
+#image-header {
+    margin-bottom: 20px;
+
+}
+
+img {
+    margin-right: 52px;
+    width: 100px;
+    display: inline-block;
+    cursor: wait;
+}
+
+
+.footer {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+
+footer p {
+    color: blue;
+    margin-bottom: 5px;
+}
+
+
+
