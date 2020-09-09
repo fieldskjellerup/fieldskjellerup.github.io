@@ -9,7 +9,7 @@ body {
 
 header {
     color: purple;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     font-size: 30px;
     margin-right: 400px;
 }
@@ -45,7 +45,7 @@ img {
 
 
 .footer {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     font-size: 11px;
     text-align: right;
     margin-right: 5px;
