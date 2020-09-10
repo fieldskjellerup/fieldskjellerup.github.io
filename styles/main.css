@@ -14,13 +14,21 @@ header {
     margin-right: 400px;
 }
 
+h4 {
+    align: right;
+}
+
 ul {
     padding-left: 20px;
-    cursor: alias;
 }
 
 li {
     color: purple;
+    padding-bottom: 10px;
+}
+
+a {
+    cursor: alias;
 }
 
 #quote {
