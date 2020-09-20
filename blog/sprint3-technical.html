@@ -12,17 +12,90 @@
   <body>
                                           <!-- Heya! -->
     <header>
-      <a href="/blog/sprint3-technical.html">
+     <a href="/blog/sprint3-technical.html"> 
         <h1>Technical</h1> 
       </a>  
       <img src="/images/welcome-page-image-1.png" alt="sun chair on the beach">
       <img src="/images/welcome-page-image-2.png" alt="green trees in forest">
       <img src="/images/welcome-page-image-3.png" alt="arid desert sand dunes">
     </header> 
+   <!-- <script> alert("Welcome to my Technical Blog!");</script> -->
     <section>
       <h2>What Is The Differences Between HTML and CSS?</h2>
         <p>HTML and CCS share a very close but strange relationship. HTML can live on its own independtly but CSS does not share this prividlge. CSS can not fuction independtly and must be aligned or "refereced" by the HTML document to be deemed useful. In this estranged relationship HTML is the ageing bore, a ridgid file which contains specfics and one-track minded appraoch to how it lives. On the other hand, CSS is the youthful creative and displays flair, character and views the world through muitple lenses when approaching a specific task. Although HTML can fully fuction on its own accord away from CCS, in todays modern and every evolving world, it is consedered best-practice or more socially acceptable that they retain a healhty and content codependency.</p>
     </section>
+    <section>
+      <h2>Explain Control Flow And Loops Using An Example Process From Everyday Life.</h2>
+      <h3>What Is Control Flow In Javascript?</h3>
+      <p>Control flow describes the way our computer performs tasks and the order that it completes them in. The control flow runs top to bottom through our Javascript code, checking that all the actions have been completed. In the occurrence that a specific action has not been completed, the control flow will halt and activate another set of actions which notify the end-user or developer.</p>
+      <p>This would be akin to following a prewritten shopping list while doing the groceries. Although we have already specified all the items which we must find and purchase before leaving the supermarket, it is common that we would over-look a specific written item and have to go back down an aisle we have already passed. Having our shopping list reminds us of all the ‘actions’ we must complete before leaving the supermarket.</p>
+      <h3>What Are Loops in Javascript?</h3>
+      <p>Creating a loop in Javascript enables us to repeat an action many times over. Using loops shortens the amount of code we would have to type manually, and in doing so, saves us valuable time.</p>
+      <p>This would be akin to using a power drill over a screw driver when building a house. Although a screw driver is fully capable of completing the work needed to build our house, we would save a lot of time and energy using the power drill.</p>
+      <h3>Example of a For Loop</h3>
+      <pre class="code-example"><code>console.log(‘Loop’);
+console.log(‘Loop’);
+console.log(‘Loop’);
+console.log(‘Loop’);
+console.log(‘Loop’);</code></pre>
+      <p class=code-example-explanation><em>Shown above is an example of how we would display the word ‘Loop” five times over within our webpages console (accessible through the web developer tools.)</em></p>
+      <pre class="code-example"><code>for (let i = 0; i < 5; i++) {
+        console.log(‘Loop’);
+      }</code></pre>
+      <p class=code-example-explanation><em>In the example above, we have simplified the very same action by using a for loop. The loop has been set to increment by one, from zero, until it reaches a number less than 5. In doing this our loop will repeat from zero till it reaches the number four, logging our ‘Loop’ a total of five times. </em></p>
+      <pre class="code-example"><code  id="example-color">Loop
+Loop
+Loop
+Loop
+Loop</code></pre>
+      <p class=code-example-explanation><em>Show above is the resulting output from both our manually written ‘console.log’ and for loop.</em></p>
+    </section>
+    <section>
+      <h2>Describe What The DOM is And An Example Of How You Might Interact With It.</h2>
+      <h3>What is the DOM?</h3>
+      <p>The DOM or Document Object Model is the “middleman” between our webpages HTML document and our webpages Javascript functionality. More specifically the DOM is a programming interface that represents our HTML ‘Document’ and its contents as ‘Objects’ and nodes. Furthermore, the ‘Model’ within the DOM represents the hierarchy of these objects as a “tree-like structure", in relation to the layout of our HTML elements. This representation of our HTML document as objects/ nodes and how these objects/nodes are laid out, both enables communication with Javascript and the ability to use Javascript to manipulate our HTML.</p>
+      <p>A simple way we can interact with the DOM, is through the use of &lt;script&gt;&lt;/script&gt; tags within the body of our HTML document. Using these &lt;script&gt; tags enables us to create Javascript code within our HTML. We can then begin to write our Javascript code and manipulate our document through the use of Javascript functions, variables and loops.</p>
+      <h3>An Example of Accessing the DOM With &lt;script&gt; Tags.</h3>
+      <pre class="code-example"><code>&lt;script&gt;
+  alert("Welcome to my Technical Blog!");
+&lt;/script&gt;</code></pre>
+      <p class=code-example-explanation><em>In the above example, we have interacted with our DOM by creating a Javascript function within the body of our HTML document. The above line of code will execute a pop-up alert at the top of our webpage whenever we visit or refresh it. Did you notice the alert which showed up when you visited this page? If not try, trying refreshing the page now</em>☺</p>
+      </section>  
+      <section>
+        <h2>Explain The Difference Between Accessing Data from Arrays and Objects.</h2>
+        <h3>How do we access data from an Array?</h3>
+        <p>In Javascript, an array is a list-like object which stores ‘data’ as a single variable. The data within an array, follow the arrays given name and is stored within square brackets separated by commas. To access an arrays data we must create a separate line of code and ‘call’ the array's name followed by a number within square brackets. This number specifies the desired data we wish to call and the order in shows within the array. Although we can include text (strings) as array data, it is still considered a number when discussing the order which it appears. An array stores data through zero-based indexing so when we call the arrays ‘first’ data entry, we must start from the number 0 and so forth.</p>
+        <h3>Example of an Array.</h3>
+        <pre class="code-example"><code>var fruits = ['Banana’, ‘Apple, ‘Orange’]</code></pre>
+        <p class=code-example-explanation><em>Above is a small example of an array. We have specified the name of the array as “fruits” and within it contains three relating data entries.</em></p>
+        <pre class="code-example"><code>var first = fruits[0] // <span id="example-color-2">Banana</span></code></pre>
+        <p class=code-example-explanation><em>Above is an example of how we would access data from our specified array, using both the arrays name and the order in which our desired data appears in. Following the two backslashes is the resulting output from our call.</em></p>
+        <h3>How do we access data from an Object?</h3>
+        <p>In Javascript, an Object (much like an array) is used to store data pertaining to our code. The data within our object is displayed indented in property name/value pairs and is wrapped in curly brackets following the objects given name. We can access a objects data through two means: one being (without spaces) the objects name followed by a period, followed by the properties name, while the second option (without spaces) is the objects name followed by a square bracket, followed by double quotes, followed by the properties name and finished with closing double quotes and closing square bracket.</p>
+        <h3>Example of a an Object.</h3>
+        <pre class="code-example"><code>var fruits = {
+  deliciousFruit1: “Banana”,
+  deliciousFruit2: “Apple”, 
+  deliciousFruit3: “Orange”
+};</code></pre>
+        <p class=code-example-explanation><em>Above is an example of the same data shown within our array, which has now been formatted to suit the needs of an object's syntax.</em></p>
+        <pre class="code-example-2"><code>fruits.deliciousFruit1 // <span id="example-color-2">Banana</span></code></code></pre>
+        <pre class="code-example"><code>fruits[“deliciousFruit1”] // <span id="example-color-2">Banana</span></code></pre>
+        <p class=code-example-explanation><em>Shown above, is the two ways we are able to call our object's data. With the resulting output shown after the two backslashes.</em></p>
+      </section>
+      <section>
+        <h2>Explain What Functions Are And Why They Are Useful.</h2>
+        <h3>What are functions in Javascript?</h3>
+        <p>A function is a set of statements that we use to either execute a specific task or calculate a needed value. The syntax for writing a function starts at the keyword ‘function’ followed by the desired function name, its properties entered into parentheses and the functions statement wrapped in curly brackets. To conduct the intended function, the function must be called/ started by stating the functions name and stating the desired number or string that we wish to run through the said function.</p>
+        <pre class="code-example"><code>function square(number) {
+  return number * number;
+}</code></pre>
+        <p class=code-example-explanation><em>In the above function named “square”, we have set our function to multiple the value of number by itself. The javascript multiplication operator of ( * ) has been set for this function.</em></p>
+        <pre class="code-example"><code id="example-color">square(5); // 25</code></pre>
+        <p class=code-example-explanation><em>Above we have specified the number 5 to be run through our function. The resulting output of our function (5 x 5) is shown following the two backslashes.</em></p>
+        <h3>Why are Functions Useful?</h3>
+        <p>Functions are used extensively throughout Javascript and are extremely useful. Functions can be executed and re-used multiple times throughout our webpage, all while taking a variety of call inputs. In doing this we save valuable time spent coding multiple lines of the same statement.</p>
+      </section>
     <footer class="footer">
       <a href="/index.html">
         <p>*</p>
