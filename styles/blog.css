@@ -35,6 +35,17 @@ code {
     margin: 0px;
 }
 
+#example-color {
+    color: blue;
+}
+
+#example-color-2 {
+    color: black;
+    background-color:#ee3
+}
+
+
+
 .code-example {
     border: 1px dotted black;
     border-left: 0px;
